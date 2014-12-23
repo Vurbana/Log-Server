@@ -1,5 +1,7 @@
 package com.sofia.uni.fmi.server;
 
+import com.sofia.uni.fmi.threads.RequestHandler;
+
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
@@ -18,6 +20,7 @@ public class TCPServer {
                 ServerSocket serverSocket = new ServerSocket(port, numberOfRequests, InetAddress.getByName(hostName));
                 while(true){
                     final Socket activeSocket = serverSocket.accept();
+                    new RequestHandler(activeSocket).start();
 
                 }
             }catch (IOException e){
