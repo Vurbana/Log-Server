@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3323ebf2-71fd-44e6-8aeb-0a32cb6d20ce" name="Default" comment="Initial Project&#10;Added Some Classes for the Server And Threads&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/logger/Writter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="3323ebf2-71fd-44e6-8aeb-0a32cb6d20ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LogServer.iws" />
@@ -434,17 +430,21 @@
       <changelist id="3323ebf2-71fd-44e6-8aeb-0a32cb6d20ce" name="Default" comment="" />
       <created>1419343190459</created>
       <updated>1419343190459</updated>
-      <workItem from="1419343194561" duration="1765000" />
+      <workItem from="1419343194561" duration="1773000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project&#10;">
       <created>1419343254822</created>
       <updated>1419343254822</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Project&#10;Added Some Classes for the Server And Threads&#10;">
+      <created>1419345493527</created>
+      <updated>1419345493527</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1765000" />
+    <option name="totallyTimeSpent" value="1773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
