@@ -34,7 +34,7 @@ public class RequestHandler extends Thread{
             String indentifier = null;
             StringBuilder sb = new StringBuilder();
             indentifier = br.readLine();
-            System.out.println("indentifier is:" + indentifier);
+
             while((input = br.readLine())!= null) {
                 System.out.println("Read from client:" +input);
                 Calendar calendar = Calendar.getInstance();
@@ -44,6 +44,7 @@ public class RequestHandler extends Thread{
                 synchronized (writter){
                   writter.writeInLogFile(sb);
                 }
+                sb.setLength(0);
 
             }
 

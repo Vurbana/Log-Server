@@ -4,7 +4,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
-import java.net.UnknownHostException;
+
 import java.util.List;
 
 /**
@@ -37,7 +37,7 @@ public class LogMsg {
                 synchronized (socketWriter){
                     socketWriter.write(indentifier);
                     for (String s:list){
-                        socketWriter.write(s+"\n");
+                        socketWriter.write(s);
                     }
                 }
 

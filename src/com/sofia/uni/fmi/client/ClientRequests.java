@@ -43,7 +43,12 @@ public class ClientRequests extends Thread {
     }
     public void run() {
             try{
-                LogMsg.logMessage(msg);
+                if(msg != null){
+                    LogMsg.logMessage(msg);
+                }
+                else{
+                    LogMsg.logMessages(msgs);
+                }
             }catch (IOException e){
                 e.printStackTrace();
             }
@@ -55,10 +60,14 @@ public class ClientRequests extends Thread {
 
     public static void main(String[] args) {
         for (int i= 0; i<20; i++){
-            new ClientRequests(RandomStringUtils.randomAlphabetic(15)+"\n").start();
+            new ClientRequests("asdf"+"\n").start();
+        }
+        ArrayList<String> msg = new ArrayList<>();
+        for (int i=0; i < 5; i++){
+            msg.add("Test\n");
         }
 
-
+        new ClientRequests(msg).start();
 
 
     }
