@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3323ebf2-71fd-44e6-8aeb-0a32cb6d20ce" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/client/ClientRequests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/LoggerAPI/LogMsg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogServer.iml" afterPath="$PROJECT_DIR$/LogServer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LogServer.iws" />
@@ -28,8 +35,8 @@
       <file leaf-file-name="TCPServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="555">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,18 +45,8 @@
       <file leaf-file-name="RequestHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunLogger.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/main/RunLogger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35211268" vertical-offset="0" max-vertical-offset="426">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="915">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,8 +55,30 @@
       <file leaf-file-name="Writter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/logger/Writter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="600">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientRequests.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/client/ClientRequests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1005">
+              <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogMsg.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/LoggerAPI/LogMsg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.13625304" vertical-offset="304" max-vertical-offset="885">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,18 +99,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java" />
-        <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/logger/Writter.java" />
-        <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java" />
         <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/main/RunLogger.java" />
+        <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/logger/Writter.java" />
+        <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/LoggerAPI/LogMsg.java" />
+        <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/client/ClientRequests.java" />
+        <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java" />
+        <option value="$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="63" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1303" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -120,7 +141,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -135,8 +156,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,12 +258,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="LoggerAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LogServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Log-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fmi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="logger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LogServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Log-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fmi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,16 +319,17 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="web.server" />
+    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/commons-lang3-3.3.2/commons-lang3-3.3.2-javadoc.jar!/" />
   </component>
   <component name="RunManager" selected="Application.RunLogger">
     <configuration default="false" name="RunLogger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -274,6 +340,28 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.sofia.uni.fmi.main.RunLogger" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LogServer" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ClientRequests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sofia.uni.fmi.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.sofia.uni.fmi.client.ClientRequests" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -491,12 +579,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.RunLogger" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ClientRequests" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.RunLogger" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.ClientRequests" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RunLogger" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -511,7 +601,8 @@
       <created>1419343190459</created>
       <updated>1419343190459</updated>
       <workItem from="1419343194561" duration="3426000" />
-      <workItem from="1419348993385" duration="719000" />
+      <workItem from="1419348993385" duration="1326000" />
+      <workItem from="1419679006457" duration="6800000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project&#10;">
       <created>1419343254822</created>
@@ -529,40 +620,44 @@
       <created>1419349706928</created>
       <updated>1419349706928</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial Project&#10;Added Some Classes for the Server And Threads&#10;Added functionality for handling log request and writting in file">
+      <created>1419349716871</created>
+      <updated>1419349716871</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4145000" />
+    <option name="totallyTimeSpent" value="11552000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="63" y="24" width="1303" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924962" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24900873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -596,6 +691,38 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="570">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="855">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/main/RunLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/logger/Writter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="570">
           <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
           <folding />
@@ -614,16 +741,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="405">
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/main/RunLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogServer.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="411">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/logger/Writter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="600">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7518248" vertical-offset="609" max-vertical-offset="1020">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/client/ClientRequests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1005">
+          <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -632,25 +789,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="555">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="915">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/main/RunLogger.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sofia/uni/fmi/LoggerAPI/LogMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35211268" vertical-offset="0" max-vertical-offset="426">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="0.13625304" vertical-offset="304" max-vertical-offset="885">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -711,7 +870,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -719,6 +877,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>commons-lang3-3.3.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

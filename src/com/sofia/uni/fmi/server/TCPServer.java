@@ -19,8 +19,12 @@ public class TCPServer {
             try{
                 ServerSocket serverSocket = new ServerSocket(port, numberOfRequests, InetAddress.getByName(hostName));
                 while(true){
+
                     final Socket activeSocket = serverSocket.accept();
+
+
                     new RequestHandler(activeSocket).start();
+
 
                 }
             }catch (IOException e){

@@ -3,6 +3,7 @@ package com.sofia.uni.fmi.threads;
 
 
 import com.sofia.uni.fmi.logger.Writter;
+import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,21 +23,23 @@ public class RequestHandler extends Thread{
     private Writter writter;
     public RequestHandler(Socket s){
         this.socket = s;
+
         this.writter = Writter.getInstance();
         dateFormat= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
     }
     public void run(){
-        try{
-            BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
+        try(BufferedReader br = new BufferedReader(new InputStreamReader(this.socket.getInputStream()))){
             String input=null;
+            String indentifier = null;
             StringBuilder sb = new StringBuilder();
-            input = br.readLine();
-            if(input!=null){
+            indentifier = br.readLine();
+            System.out.println("indentifier is:" + indentifier);
+            while((input = br.readLine())!= null) {
+                System.out.println("Read from client:" +input);
                 Calendar calendar = Calendar.getInstance();
                 sb.append(dateFormat.format(calendar.getTime()));
-                sb.append(" " + "[" + input + "]: ");
-            }
-            while((input = br.readLine())!= null) {
+                sb.append(" " + "[" + indentifier + "]: ");
                 sb.append(input);
                 synchronized (writter){
                   writter.writeInLogFile(sb);
@@ -46,6 +49,16 @@ public class RequestHandler extends Thread{
 
         }catch (IOException e){
             e.printStackTrace();
+        }
+        finally {
+            if(socket!=null){
+                try{
+                    socket.close();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+
         }
     }
 }
