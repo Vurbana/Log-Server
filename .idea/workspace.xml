@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3323ebf2-71fd-44e6-8aeb-0a32cb6d20ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/client/ClientRequests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/LoggerAPI/LogMsg.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogServer.iml" afterPath="$PROJECT_DIR$/LogServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/threads/RequestHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java" afterPath="$PROJECT_DIR$/src/com/sofia/uni/fmi/server/TCPServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LogServer.iws" />
@@ -602,7 +595,7 @@
       <updated>1419343190459</updated>
       <workItem from="1419343194561" duration="3426000" />
       <workItem from="1419348993385" duration="1326000" />
-      <workItem from="1419679006457" duration="6800000" />
+      <workItem from="1419679006457" duration="6991000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project&#10;">
       <created>1419343254822</created>
@@ -624,11 +617,15 @@
       <created>1419349716871</created>
       <updated>1419349716871</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added client requests, fixed request handler">
+      <created>1419685899591</created>
+      <updated>1419685899591</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11552000" />
+    <option name="totallyTimeSpent" value="11743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="24" width="1303" height="744" extended-state="6" />
@@ -679,7 +676,8 @@
     <MESSAGE value="Initial Project&#10;" />
     <MESSAGE value="Initial Project&#10;Added Some Classes for the Server And Threads&#10;" />
     <MESSAGE value="Initial Project&#10;Added Some Classes for the Server And Threads&#10;Added functionality for handling log request and writting in file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Project&#10;Added Some Classes for the Server And Threads&#10;Added functionality for handling log request and writting in file" />
+    <MESSAGE value="Added client requests, fixed request handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added client requests, fixed request handler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
