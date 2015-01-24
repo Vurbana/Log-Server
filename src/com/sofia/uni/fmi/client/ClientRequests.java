@@ -1,25 +1,28 @@
 package com.sofia.uni.fmi.client;
 
-import com.sofia.uni.fmi.LoggerAPI.LogMsg;
-import org.apache.commons.lang3.RandomStringUtils;
+import com.sofia.uni.fmi.LoggerAPI.Logger;
 
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by vankata on 27.12.14.
  */
-public class ClientRequests extends Thread {
+public class ClientRequests implements Runnable {
+    private Logger log;
     private String msg;
     private List<String> msgs;
     public ClientRequests(String msg){
+        log = new Logger();
         setMsg(msg);
+
     }
     public ClientRequests(List<String> list){
+        log = new Logger();
         setMsgs(list);
     }
 
@@ -44,13 +47,14 @@ public class ClientRequests extends Thread {
     public void run() {
             try{
                 if(msg != null){
-                    LogMsg.logMessage(msg);
+                    log.logMessage(msg);
                 }
                 else{
-                    LogMsg.logMessages(msgs);
+                    log.logMessage(msgs);
                 }
             }catch (IOException e){
                 e.printStackTrace();
+
             }
 
 
@@ -58,16 +62,35 @@ public class ClientRequests extends Thread {
 
     }
 
-    public static void main(String[] args) {
-        for (int i= 0; i<20; i++){
-            new ClientRequests("asdf"+"\n").start();
-        }
-        ArrayList<String> msg = new ArrayList<>();
-        for (int i=0; i < 5; i++){
-            msg.add("Test\n");
+    public static void main(String[] args) throws  InterruptedException {
+        ExecutorService service = Executors.newCachedThreadPool();
+
+
+            for (int i = 0; i < 100; i++) {
+               service.submit(new ClientRequests("I love popcorn\n"));
+             //new Thread(new ClientRequests("I love popcorn \n")).start();
+           }
+            for (int i = 0; i < 100; i++) {
+               //new Thread(new ClientRequests("I love vacations\n")).start();
+                service.submit(new ClientRequests("I love vacations\n"));
+            }
+            ArrayList<String> msg = new ArrayList<>();
+            for (int i = 0; i < 200; i++) {
+                msg.add("Testing my app\n");
+            }
+        service.submit(new ClientRequests(msg));
+        long time = System.currentTimeMillis();
+        service.shutdown();
+        if(service.awaitTermination(60, TimeUnit.SECONDS)){
+            System.out.println("It terminated");
+            long finishTime = System.currentTimeMillis() - time;
+            System.out.println("Time in ms:" +finishTime);
+
         }
 
-        new ClientRequests(msg).start();
+            //new Thread(new ClientRequests(msg)).start();
+
+
 
 
     }

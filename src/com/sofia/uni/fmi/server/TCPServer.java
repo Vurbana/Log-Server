@@ -12,23 +12,17 @@ import java.net.Socket;
  */
 public class TCPServer {
      private final int port = 10514;
-     private final String hostName = "localhost";
-     private final int numberOfRequests = 10000;
+
 
     public void startServer(){
             try{
-                ServerSocket serverSocket = new ServerSocket(port, numberOfRequests, InetAddress.getByName(hostName));
+                ServerSocket serverSocket = new ServerSocket(port);
                 while(true){
-
                     final Socket activeSocket = serverSocket.accept();
-
-
-                    new RequestHandler(activeSocket).start();
-
-
+                    new Thread(new RequestHandler(activeSocket)).start();
                 }
             }catch (IOException e){
-
+                e.printStackTrace();
             }
 
     }

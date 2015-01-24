@@ -17,14 +17,12 @@ import java.util.Calendar;
 /**
  * Created by vankata on 23.12.14.
  */
-public class RequestHandler extends Thread{
+public class RequestHandler implements Runnable{
     private Socket socket = null;
     private DateFormat dateFormat;
-    private Writter writter;
+
     public RequestHandler(Socket s){
         this.socket = s;
-
-        this.writter = Writter.getInstance();
         dateFormat= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
     }
     public void run(){
@@ -36,14 +34,14 @@ public class RequestHandler extends Thread{
             indentifier = br.readLine();
 
             while((input = br.readLine())!= null) {
-                System.out.println("Read from client:" +input);
+
                 Calendar calendar = Calendar.getInstance();
                 sb.append(dateFormat.format(calendar.getTime()));
                 sb.append(" " + "[" + indentifier + "]: ");
                 sb.append(input);
-                synchronized (writter){
-                  writter.writeInLogFile(sb);
-                }
+                Writter.writeInLogFile(sb);
+
+
                 sb.setLength(0);
 
             }
