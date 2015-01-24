@@ -1,4 +1,4 @@
-package com.sofia.uni.fmi.LoggerAPI;
+package com.sofia.uni.fmi.logger;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

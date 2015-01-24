@@ -2,8 +2,7 @@ package com.sofia.uni.fmi.threads;
 
 
 
-import com.sofia.uni.fmi.logger.Writter;
-import com.sun.org.apache.xpath.internal.SourceTree;
+import com.sofia.uni.fmi.writter.Writter;
 
 import java.io.BufferedReader;
 import java.io.IOException;

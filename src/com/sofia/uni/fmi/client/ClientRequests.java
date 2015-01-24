@@ -1,6 +1,6 @@
 package com.sofia.uni.fmi.client;
 
-import com.sofia.uni.fmi.LoggerAPI.Logger;
+import com.sofia.uni.fmi.logger.Logger;
 
 import java.io.IOException;
 import java.util.ArrayList;

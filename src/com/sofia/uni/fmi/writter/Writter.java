@@ -1,4 +1,4 @@
-package com.sofia.uni.fmi.logger;
+package com.sofia.uni.fmi.writter;
 
 import java.io.*;
 import java.util.Formatter;
