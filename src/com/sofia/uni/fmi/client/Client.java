@@ -41,14 +41,17 @@ public class Client implements Runnable {
             this.msgs =  new ArrayList<String>(msgs);
         }
     }
+    private void sendMessage() throws IOException {
+        if(msg != null){
+            log.logMessage(msg);
+        }
+        else{
+            log.logMessage(msgs);
+        }
+    }
     public void run() {
         try{
-            if(msg != null){
-                log.logMessage(msg);
-            }
-            else{
-                log.logMessage(msgs);
-            }
+            sendMessage();
         }catch (IOException e){
             e.printStackTrace();
 

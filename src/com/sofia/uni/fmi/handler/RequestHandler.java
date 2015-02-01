@@ -1,4 +1,4 @@
-package com.sofia.uni.fmi.threads;
+package com.sofia.uni.fmi.handler;
 
 
 
@@ -17,6 +17,7 @@ import java.util.Calendar;
  * Created by vankata on 23.12.14.
  */
 public class RequestHandler implements Runnable{
+    private static long uniqueNumber=0l;
     private Socket socket = null;
     private DateFormat dateFormat;
 
@@ -24,31 +25,23 @@ public class RequestHandler implements Runnable{
         this.socket = s;
         dateFormat= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
     }
-    public void run(){
 
+    public void run(){
         try(BufferedReader br = new BufferedReader(new InputStreamReader(this.socket.getInputStream()))){
             String input=null;
-            String indentifier = null;
+            String indentifier = String.format("%012d", uniqueNumber++);
             StringBuilder sb = new StringBuilder();
-            indentifier = br.readLine();
-
             while((input = br.readLine())!= null) {
-
                 Calendar calendar = Calendar.getInstance();
                 sb.append(dateFormat.format(calendar.getTime()));
                 sb.append(" " + "[" + indentifier + "]: ");
                 sb.append(input);
                 Writter.writeInLogFile(sb);
-
-
                 sb.setLength(0);
-
             }
-
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             if(socket!=null){
                 try{
                     socket.close();

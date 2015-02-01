@@ -10,19 +10,14 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Writter {
 
-    private static Lock lock = new ReentrantLock();
 
-    public static void writeInLogFile(StringBuilder sb){
-        lock.lock();
+
+    public synchronized static void writeInLogFile(StringBuilder sb){
         try(Formatter formatFile = new Formatter(new BufferedWriter(new FileWriter("log.txt", true)))){
-
             formatFile.format("%s\n", sb.toString());
-
         }catch (IOException e){
             e.printStackTrace();
         }
-        finally {
-            lock.unlock();
-        }
+
     }
 }
